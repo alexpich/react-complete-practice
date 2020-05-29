@@ -3,19 +3,6 @@ import React, { Component } from "react";
 import classes from "./App.css";
 import Person from "./Person/Person";
 
-// const StyledButton = styled.button`
-//   background-color: ${(props) => (props.myAlt ? "red" : "green")};
-//   color: white;
-//   font: inherit;
-//   border: 1px solid blue;
-//   padding: 8px;
-//   cursor: pointer;
-//   &:hover {
-//     background-color: ${(props) => (props.myAlt ? "salmon" : "lightgreen")};
-//     color: black;
-//   }
-// `;
-
 class App extends Component {
   state = {
     persons: [
@@ -40,11 +27,7 @@ class App extends Component {
     persons[personIndex] = person;
 
     this.setState({
-      persons: [
-        { name: "Alex", age: 27 },
-        { name: event.target.values, age: 29 },
-        { name: "Christina", age: 26 },
-      ],
+      persons: persons,
     });
   };
 
